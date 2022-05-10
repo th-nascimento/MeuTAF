@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAFômetro</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body >
+    <div class="container">
+
+        <h2 class="letterStyle">Classificador do</h2>
+        <h1 class="letterStyle">Teste de Aptidão Física</h1>
+        <div id="content">           
+            <h3 id="hopm" class="letterStyle">OPM:<input id="opm" name="opm" type="text" placeholder="OPM"></h3>
+            <h3 id="hgrad" class="letterStyle">Grad:<input id="grad" name="grad" type="text" placeholder="Grad"></h3>
+            <h3 id="hnome" class="letterStyle">Nome:<input id="nome" name="nome" type="text" placeholder="Nome"></h3>
+            <h3 id="hidade" class="letterStyle">Idade:<input id="idade" name="idade" type="number" placeholder="Idade"></h3>
+            <div id="genero">
+                <h3 class="letterStyle"><input class="genero" id="masculino" name="masculino" type="checkbox" value="Masculino">masculino</h3>
+                <h3 class="letterStyle"><input class="genero" id="feminino" name="feminino" type="checkbox" value="Feminino">feminino</h3>
+            </div>
+        </div>
+
+        <div id="contentTaf">
+            <input type="number" name="corrida" id="corrida" placeholder="Corrida 12min">
+            <input type="number" name="barra" id="barra" placeholder="Barra">
+            <input type="number" name="flexao" id="flexao"  placeholder="Flexão">
+            <input type="number" name="natacao" id="natacao" placeholder="Natação">
+        </div>
+
+        <button id="calcularResultado" onclick="calcular()">Calcular Resultado</button>
+
+        <div>
+            <ul id="resultado">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
