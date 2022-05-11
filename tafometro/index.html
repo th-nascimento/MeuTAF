@@ -14,48 +14,52 @@
             <h1>TAFÔMETRO</h1>
             <h3>Classificador de Teste de Aptidão Física</h3>
         </div>
-        <div class="form">
+        <form>
             <div class="person-info">
                 <div class="input-info">
                     <label for="grad">Posto/Grad</label>
-                    <input type="text" name="grad" id="grad" placeholder="P/Grad">
+                    <input type="text" name="grad" id="grad" placeholder="P/Grad" autofocus required>
                 </div>
                 <div class="input-info">
                     <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" placeholder="Nome">
+                    <input type="text" name="name" id="name" placeholder="Nome" required>
                 </div>
                 <div>
                     <label for="idade">Idade</label>
-                    <input type="number" name="idade" id="idade" placeholder="Idade">
+                    <input type="number" name="idade" id="idade" placeholder="Idade" min="18" max="55" required>
                 </div>
                 <div>
-                    <input type="checkbox" name="masculino" id="masculino">
-                    <label class="check-box" for="masculino">Masculino</label>
+                    <input type="radio" name="gender" id="gender" value="M" required>
+                    <label class="radio" for="gender">Masculino</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="feminino" id="feminino">
-                    <label class="check-box" for="feminino">Feminino</label>
+                    <input type="radio" name="gender" id="gender" value="F" required>
+                    <label class="radio" for="gender">Feminino</label>
                 </div>
             </div>
             <div class="person-taf">
                 <div>
                     <label for="corrida">Corrida</label>
-                    <input type="number" name="corrida" id="corrida" placeholder="Corrida">
+                    <input type="number" name="corrida" id="corrida" placeholder="metros" min="0" required>
                 </div>
                 <div>
                     <label for="barra">Barra</label>
-                    <input type="number" name="barra" id="barra" placeholder="Barra">
+                    <input type="number" name="barra" id="barra" placeholder="nº repetições" min="0" required>
                 </div>
                 <div>
                     <label for="flexao">Flexão</label>
-                    <input type="number" name="flexao" id="flexao" placeholder="Flexão">
+                    <input type="number" name="flexao" id="flexao" placeholder="nº repetições" min="0" required>
                 </div>
                 <div>
-                    <label for="natacao">Natação</label>
-                    <input type="number" name="natacao" id="natacao" placeholder="Natação">
+                    <label for="abdominal">Abdominal</label>
+                    <input type="number" name="abdominal" id="abdominal" placeholder="nº repetições" min="0" required>
                 </div>
             </div>
-        </div>
+            <div class="button">
+                <input type="submit" name="classificar" id="classificar" value="Classificar">
+                <input type="button" name="limpar" id="limpar" value="Limpar">
+            </div>
+        </form>
         <div class="result"></div>
     </div>  
 </body>
