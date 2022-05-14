@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAFÔMETRO</title>
+    <title>MEU TAF</title>
 
     <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -11,7 +11,7 @@
 <body>
     <div id="content">
         <header>
-            <h1>TAFÔMETRO</h1>
+            <h1>MeuTAF.com</h1>
             <h3>Classificador de Teste de Aptidão Física</h3>
         </header>
         <form>
@@ -21,20 +21,20 @@
                     <input type="text" name="grad" id="grad" placeholder="P/Grad" autofocus required>
                 </div>
                 <div class="input-info">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" placeholder="Nome" required>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 </div>
                 <div>
                     <label for="idade">Idade</label>
                     <input type="number" name="idade" id="idade" placeholder="Idade" min="18" max="55" required>
                 </div>
                 <div>
-                    <input type="radio" name="gender" id="gender" value="M" required>
-                    <label class="radio" for="gender">Masculino</label>
+                    <input type="radio" name="genero" class="genero" value="M" required>
+                    <label class="rad" for="genero">Masculino</label>
                 </div>
                 <div>
-                    <input type="radio" name="gender" id="gender" value="F" required>
-                    <label class="radio" for="gender">Feminino</label>
+                    <input type="radio" name="genero" class="genero" value="F" required>
+                    <label class="rad" for="genero">Feminino</label>
                 </div>
             </div>
             <div class="person-taf">
@@ -56,12 +56,14 @@
                 </div>
             </div>
             <div class="button">
-                <input type="submit" name="classificar" id="classificar" value="Classificar">
-                <input type="button" name="limpar" id="limpar" value="Limpar">
+                <input onclick="classificator()" type="button" name="classificar" id="classificar" value="Classificar">
+                <input type="reset" name="reset" id="reset" value="Limpar">
             </div>
         </form>
         <footer>
-            <div id="result"></div>
+            <div id="result">
+
+            </div>
         </footer>
         <script src="script.js"></script>
     </div>  
