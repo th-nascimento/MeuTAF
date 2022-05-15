@@ -59,7 +59,7 @@ form{
     width: 52px;
 }
 
-.radio{
+.rad{
     display: inline-block;
 }
 
@@ -69,7 +69,7 @@ form{
     justify-content: space-evenly;
 }
 
-#classificar, #limpar{
+#classificar, #reset{
     height: 40px;
     padding: 2px;
 }
@@ -82,4 +82,14 @@ footer{
     height: 35%;
     background-color: rgb(255, 216, 143);
     border-radius: 0px 0px 15px 15px;
+}
+
+#result{
+    width: 100%;
+    height: 88%;
+    border: 1px solid black;
+    border-radius: 0px 0px 15px 15px;
+    margin: 15px 5px;
+
+    
 }
