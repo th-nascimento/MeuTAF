@@ -1,6 +1,8 @@
-let result = document.getElementById("result")
-
-/* result.innerHTML="<p>A partir daqui o Java Script será integrado ao projeto.</p>" */
+var grad = document.getElementById("grad");
+var nome = document.getElementById("nome");
+var idade = document.getElementById("idade");
+var divResult = document.getElementById("divResult");
+var result = document.getElementById("result");
 
 // Foi definido o parâmetro máximo da pontuação:
 var padrao = {
@@ -224,6 +226,18 @@ var parametroTaf = {
                         padrao.f = flexao;
                         padrao.abd = abdominal;
 
+result.innerHTML = `<h3>${document.querySelector('input[id="grad"]').value} ${document.querySelector('input[id="nome"]').value}:</h3>`;
+
+result.innerHTML += `<li>Corrida: ${document.querySelector('input[id="corrida"]').value}km, equivalente a ${padrao.c} pontos;</li>`;
+
+result.innerHTML += `<li>Barra: ${document.querySelector('input[id="barra"]').value} rpt, equivalente a ${padrao.b} pontos;</li>`;
+
+result.innerHTML += `<li>Flexão: ${document.querySelector('input[id="flexao"]').value} rpt, equivalente a ${padrao.f} pontos;</li>`;
+
+result.innerHTML += `<li>Abdominal: ${document.querySelector('input[id="abdominal"]').value} rpt, equivalente a ${padrao.abd} pontos.</li>`;
+
+result.innerHTML += `<br><h3>Pontuação Total: ${padrao.c+padrao.b+padrao.f+padrao.abd}.</h3>`;
+
                         console.log(padrao);
                         }
 
@@ -383,6 +397,16 @@ var parametroTaf = {
                         padrao.b = "Não é exigido";
                         padrao.f = flexao;
                         padrao.abd = abdominal;
+
+result.innerHTML = `<h3>${document.querySelector('input[id="grad"]').value} ${document.querySelector('input[id="nome"]').value}:</h3>`;
+
+result.innerHTML += `<li>Corrida: ${document.querySelector('input[id="corrida"]').value}km, equivalente a ${padrao.c} pontos;</li>`;
+
+result.innerHTML += `<li>Flexão: ${document.querySelector('input[id="flexao"]').value} rpt, equivalente a ${padrao.f} pontos;</li>`;
+
+result.innerHTML += `<li>Abdominal: ${document.querySelector('input[id="abdominal"]').value} rpt, equivalente a ${padrao.abd} pontos.</li>`;
+
+result.innerHTML += `<br><h3>Pontuação Total: ${padrao.c+padrao.f+padrao.abd}.</h3>`;
 
                         console.log(padrao);
                         }
