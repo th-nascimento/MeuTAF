@@ -2,7 +2,7 @@ var grad = document.getElementById("grad");
 var nome = document.getElementById("nome");
 var idade = document.getElementById("idade");
 var divResult = document.getElementById("divResult");
-var result = document.getElementById("result");
+var result = document.getElementById("result-list");
 
 // Foi definido o parâmetro máximo da pontuação:
 var padrao = {
